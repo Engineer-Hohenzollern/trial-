@@ -21,7 +21,7 @@ try:
         with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
 
             cur.execute('SELECT * FROM RIC')
-            a=cur.fetchall():
+            a=cur.fetchall()
             print(a)
 
 except Exception as error:
